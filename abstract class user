@@ -1,0 +1,56 @@
+abstract class user
+{public login;
+public status; //active,banned
+private password;
+public email;
+public is_online; // online/ offline
+}
+public function get Profile (login){
+	
+}
+public function reed{
+	if (this status== 'banned'){
+	return
+	}
+}
+public function comment(post){
+	
+}
+public function edit profil (login){
+	if (! this is Edit Allowed)
+	return
+}
+abstract protected function is Edit Allowed (login);
+public login (login, password){
+	
+}
+public logout (){
+	
+}
+public function register( data array){
+	
+}
+Class Guest extends User
+{
+	protected function is Edit Allowed (login){
+	if (this login ! = login){
+	return false;
+	} else {
+	return true;
+	}
+
+	}
+}
+Class Admin extends User
+{
+	protected function is Edit Allowed (login){
+	return true;
+	}
+	public function add User (login, password,email){
+	}
+	public function delete User (login){
+	}
+	public function add Post (date...)
+	public function edit Post ()
+	public function delete Post ()
+}
