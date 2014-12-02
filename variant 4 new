@@ -1,0 +1,35 @@
+<?php 
+var kolichestvo_studentov;
+var dvojka = 0;
+var trjka = 0;
+var chetviorka = 0;
+var pyatiorka = 0;
+var summa = 0;
+var sredniaya_otsenka;
+var otsenka = array();
+get (kolichestvo_studentov);
+get (otsenka);
+for (i = 0; i < count(otsenka); i++) {
+	switch(otsenka [i] ){
+		case 2:
+		dvojka ++;
+		break;
+		case 3:
+		trjka ++;
+		break;
+		case 4:
+		chetviorka ++;
+		break;
+		case 5:
+		pyatiorka ++;
+		break;
+	}
+	summa = summa+otsenka[i];
+}
+sredniaya_otsenka = summa / kolichestvo_studentov;
+print (dvojka);
+print (trjka);
+print (chetviorka);
+print (pyatiorka);
+print (sredniaya_otsenka);
+?>
