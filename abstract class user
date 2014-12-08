@@ -9,18 +9,18 @@ public function get Profile (login){
 	
 }
 public function reed{
-	if (this status== 'banned'){
+	if (this -> status== 'banned'){
 	return
 	}
 }
 public function comment(post){
 	
 }
-public function edit profil (login){
+public function edit_profil (login){
 	if (! this is Edit Allowed)
 	return
 }
-abstract protected function is Edit Allowed (login);
+abstract protected function is Edit_Allowed (login);
 public login (login, password){
 	
 }
@@ -30,10 +30,10 @@ public logout (){
 public function register( data array){
 	
 }
-Class Guest extends User
+Class Guest extends_User
 {
-	protected function is Edit Allowed (login){
-	if (this login ! = login){
+	protected function is Edit_Allowed (login){
+	if (this -> login ! = login){
 	return false;
 	} else {
 	return true;
@@ -41,16 +41,16 @@ Class Guest extends User
 
 	}
 }
-Class Admin extends User
+Class Admin extends_User
 {
-	protected function is Edit Allowed (login){
+	protected function is Edit_Allowed (login){
 	return true;
 	}
-	public function add User (login, password,email){
+	public function add_User (login, password,email){
 	}
-	public function delete User (login){
+	public function delete_User (login){
 	}
-	public function add Post (date...)
-	public function edit Post ()
-	public function delete Post ()
+	public function add_Post (date...)
+	public function edit_Post ()
+	public function delete_Post ()
 }
