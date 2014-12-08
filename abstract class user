@@ -30,7 +30,7 @@ public logout (){
 public function register( data array){
 	
 }
-Class Guest extends_User
+Class Guest extends User
 {
 	protected function is Edit_Allowed (login){
 	if (this -> login ! = login){
@@ -41,7 +41,7 @@ Class Guest extends_User
 
 	}
 }
-Class Admin extends_User
+Class Admin extends User
 {
 	protected function is Edit_Allowed (login){
 	return true;
