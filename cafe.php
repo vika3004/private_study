@@ -3,21 +3,18 @@ Abstract class User
 {
 	public menu;
 	public news;
-	public function get_info(){
+	public function get_info(){  // рассылка по электронной почте об акциях, новое блюдо...
 	print (menu);
 	print (news);
 	}
 }
 Abstract class RU extends User
 {
-    public function login (login){
-	}
-    private function password (password){
-    }
-    protected function email(email){
-    }	
+    public  login;
+    private password; 
+    public email;
 }
-Class Guest extends User
+Class Guest 
 {
 	public function Look_info(){
 	}
@@ -35,6 +32,10 @@ Class Client extends RU
 		order.sum = order.sum -0.02*order.sum
 		print (order) 	
 	}
+	public function View_account_status{
+		if (this. account >= 5000)
+			Client=VIP_Client
+	}
 }
 Class VIP_Client extends Client
 {
@@ -51,7 +52,7 @@ Abstract class Personal extends RU
 }
 Class Waiter extends Personal
 {
-		public function invoice {
+	public function invoice {
 	}
 }
 Class Cook extends Personal
@@ -59,9 +60,6 @@ Class Cook extends Personal
 }
 Class Admin extends Personal
 {
-    protected function isEdit_Allowed (login){
-		return true;
-	}
     public function add_User (login, password,email){
 	}
     public function delete_User (login){
