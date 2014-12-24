@@ -8,38 +8,42 @@
 
  <body bgcolor="#AFEEEE">
  	
-<form METHOD = "post" name="" ACTION="">
-<p> Логин <INPUT name="ligin" type ="text" >
+<form method= "post" name=""  action="">
 
-</INPUT></p>
+<p> Логин <input name="ligin" type ="text" > </input></p>
 
-<p> Пароль <INPUT name="password" type="PASSWORD">
-</INPUT></p>
 
-<p><INPUT  type="checkbox" value="Запомнить меня"> Запомнить </INPUT> </p>
+<p> Пароль <input name="password" type="PASSWORD"> </input></p>
+<p> Подтверждение пароля <input name="password" type="PASSWORD"> </input></p>
 
-<p>  <INPUT  type="SUBMIT" VALUE ="Вход">
-</INPUT> </p>
+<p> Имя <input name="name" type ="text" > </input></p>
+
 
 
 <p>
- <INPUT type="radio" name="user"> Гость </INPUT>
- <INPUT type="radio" name="user"> Пользователь </INPUT>
+ <input type="radio" name="sex"> Мужской </input>
+ <input type="radio" name="sex"> Женский </input>
 </p>
 
 <p>
     <label for="country">Страна</label>
-    <SELECT ="Country">
-	<OPTION VALUE="Ukraine">Украина
-	<OPTION VALUE ="Russia">Россия	
-	<OPTION VALUE ="Sweden">Швеция
-	<OPTION VALUE ="Poland">Польша
-	<OPTION VALUE ="USA"> США	
-	<OPTION VALUE ="Canada"> Канада
-	<OPTION VALUE ="Australia"> Австралия				
-	<OPTION VALUE ="France"> Франция				
-	</SELECT>
+    <select name="Country">
+	<option value="Ukraine">Украина
+	<option value ="Russia">Россия	
+	<option value ="Sweden">Швеция
+	<option value ="Poland">Польша
+	<option value ="USA"> США	
+	<option value ="Canada"> Канада
+	<option value ="Australia"> Австралия				
+	<option value ="France"> Франция				
+	</select>
 </p>
+
+<p> О себе <textarea name="profile" cols="45" rows="10">  </textarea> </p>            	 
+
+<p><input  type="checkbox" value="Запомнить меня"> Я принимаю условия соглашения </input> </p>
+
+<p>  <input  type="SUBMIT"  value="Регистрация"> </input> </p>
 
 </form>
 </body>
