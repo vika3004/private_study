@@ -7,7 +7,7 @@
        height: 100px;
        background: #D2B48C;
        margin: 0;
-       border-bottom: 2px solid #BEBEBE; /* Параметры линии внизу */
+       border-bottom: 2px solid rgb(150, 146, 146); /* Параметры линии внизу */
        background-image: url('fon1.jpg');
        background-size:100%; 
     }
@@ -31,7 +31,9 @@
     }
 
     .header2 p{
-    padding: 35px;  
+    padding-left: 20px;
+    border-left: 1px dashed  rgb(150, 146, 146) ;
+    margin-top: 57px;  
     }
 
     .header3{
@@ -39,6 +41,7 @@
        height: 100px;
        float: left;
        display: inline-block;
+
     }
 
     .header3 p{
@@ -61,10 +64,11 @@
         }
 
     .main_menu{
-       width: 99.7888%;
+       width: 100%;
        height: 50px;
-       margin: 0 auto;
-       border: 2px dashed  #BEBEBE; /* Параметры границы */
+       margin: 0;
+       border-top: 2px dashed  rgb(150, 146, 146); /* Параметры границы */
+       border-bottom: 2px dashed  rgb(150, 146, 146); /* Параметры границы */
        background-image: url('fon3.jpg');
        background-size:100%;
     } 
@@ -87,7 +91,8 @@
     } 
 
     .search{
-      padding: 5px;          
+      padding: 5px;
+      padding-right: 75px;          
       background-image: url('searchform-submit.png');
       background-repeat: no-repeat, no-repeat;
       background-position:right;
@@ -97,10 +102,11 @@
 
     .all_content{
     width: 1200px;
-    background-color: #E8E8E8;
-    border: 2px ridge #CFCFCF; /* Параметры границы */  
+    background-color: rgb(249, 249, 249);
+    border: 2px ridge rgb(204, 204, 204); /* Параметры границы */  
     margin: 30px auto;
     border-radius: 7px;
+    border-collapse: collapse; /* Отображать только одинарные линии */
     }
 
 
@@ -111,7 +117,7 @@
       float: left;
       margin: 0 auto;
       text-decoration: none;
-      color: #000;      
+      color: rgb(249, 249, 249);      
       font-family: 'Arial', sans-serif;
       font-size: 16px;
       border-collapse: collapse; /* Отображать только одинарные линии */
@@ -120,7 +126,7 @@
     .content_menu li {
       list-style: none;
       padding: 15px;
-      border: 1px ridge #CFCFCF;
+      border: 1px ridge rgb(238, 238, 238);
       margin: 0 auto; 
     }
 
@@ -129,7 +135,8 @@
      background-color: #E8E8E8;
      }
 
-    #content_menu {margin: 0 ;
+    #content_menu {
+    margin: 0 ;
     padding: 0;
     }
     
@@ -146,6 +153,8 @@
     font-family: 'Arial', sans-serif;
     font-size: 16px;
     margin: 15px 20px 5px;
+    padding: 5px;
+    border-bottom: 1px ridge rgb(238, 238, 238); /* Параметры линии внизу */
     }
     .way a:hover {
     background: #696969; /* Цвет фона под ссылкой */ 
@@ -157,7 +166,7 @@
     float: left;
     margin: 15px;
     padding: 5px;
-    border: 2px ridge #BEBEBE;
+    border: 1.5px solid rgb(211, 211, 211);
     border-radius: 5px;
     }
     .text_small{
@@ -166,9 +175,9 @@
     float: left;
     }
     .title_small{
-       width: 100%;
+       width: 98.5%;
        display: inline-block;
-       border-bottom: 2px dashed #BEBEBE;
+       border-bottom: 1.5px dashed rgb(190, 190, 190);
      
     }
     .title_text{
@@ -187,25 +196,25 @@
     float: left;
     border-left: 1px dotted black ;
     padding-left: 10px;
-    color:#BEBEBE;
+    color:rgb(221, 220, 220);
     }
     .checkbox{
     position: absolute; /* Абсолютное позиционирование */
     top: 298px; /* Положение от верхнего края */
-    right: 86px; /* Положение от правого края */
+    right: 90px; /* Положение от правого края */
     line-height: 1px;
     }
 
     .text{
-    width: 100%;
-    border-bottom: 2px dashed #BEBEBE;
+    width: 98.5%;
+    border-bottom: 1.5px dashed #BEBEBE;
       
     }
     .bottom_menu_text_small{
-    width: 98%;
+    width: 97%;
     display: inline-block;
     float: left;
-    border-bottom: 2px dashed #BEBEBE;
+    border-bottom: 1.5px dashed rgb(190, 190, 190);
     padding: 5px;
 
     }
@@ -232,11 +241,12 @@
     }
     
     .title_big{
-    width: 100%;
+    width: 95%;
     height: 70px;
     display: inline-block;
     margin: 20px;
-
+    border-bottom: 1px ridge rgb(238, 238, 238); /* Параметры линии внизу */
+    padding-bottom: 20px;
     }
 
 .title_text_big{
@@ -267,10 +277,9 @@
   
     .picture_big{
     display: inline-block;
-    float: center;
-    margin: 15px;
+    margin: 15px 43px 15px ;
     padding: 5px;
-    border: 2px ridge #BEBEBE;
+    border: 1.5px solid rgb(211, 211, 211);
     border-radius: 5px;
     }
 
@@ -318,12 +327,12 @@
     .coment{
     width: 70%;
     height: 60px;
-    
     border: 2px ridge #BEBEBE;
     border-radius: 5px;
     background-color: white;
     display: inline-block;
     float: right;
+    margin: 20px;
     }
     
 
