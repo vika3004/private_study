@@ -152,7 +152,8 @@
      border-left: 2px ridge #BEBEBE;
      margin: 0;
      font-family: 'Arial', sans-serif;
-    font-size: 16px;
+     font-size: 16px;
+     padding-bottom: 40px;
     }
     .way{
     font-family: 'Arial', sans-serif;
@@ -334,19 +335,33 @@
     .comment1 input {
    display: inline-block;
     float: left;
-    margin: 80px 0px 20px -67px;  
+    margin: 80px 0px 20px -67px; 
+    background-color: white; 
+    border: 1.5px solid #e1e1e1;
+    color:#b5b5b5;
     }
-    
-    #com1{
+    .comment1_text
+    {
     width: 700px;
-    height: 99px;
+    height: 59px;
     border: 1.5px solid rgb(234, 234, 234);
     border-radius: 5px;
     background-color: white;
     display: inline-block;
     float: right;
     margin: 0 20px 20px 20px;
+    padding: 20px 0 20px 20px ;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
 }
+
+.nosik{
+    position: relative;
+    top: 30px;
+    left: 34px;
+    }
+
+
 .comment2 img{
     width: 6%;
     padding: 5px;
@@ -360,15 +375,50 @@
    display: inline-block;
     float: left;
     margin: 80px 0px 20px -88px; 
+    background-color: white;
+    border: 1.5px solid #e1e1e1;
+    color:#b5b5b5;
     
     }
-#com2{
+.comment2_text{
     width: 558px;
-    height: 99px;
+    height: 59px;
     border: 1.5px solid rgb(234, 234, 234);
     border-radius: 5px;
     background-color: white;
     display: inline-block;
     float: right;
     margin: 0 20px 20px 20px;
+    padding: 20px 0 20px 20px ;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+  }
+.com_name{
+color:#f23030;
+}
+.com_data {
+color:#606060;
 
+}
+.nosik2{
+    position: relative;
+    top: 135px;
+    left: 176px;
+    }
+
+  .message input {
+    width: 100px;
+    height: 29px;
+    display: inline-block;
+    float: right;
+    margin: 10px 30px 10px 0px; 
+    border: 1.5px solid rgb(234, 234, 234);
+    border-radius: 5px;
+    background-color: white;
+    color: #f23030;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    } 
+ .message input:hover {
+    background-color: #E8E8E8;
+        } 
