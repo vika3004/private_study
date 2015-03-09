@@ -1,0 +1,177 @@
+<html><! -- Программа Primer1. html -- >
+<! Doctype html public”- //w3c//dtd html 3.2//en”>
+<html>
+<head>
+	<title>
+	tabl
+    </title>
+    <meta>
+    <script type="text/javascript" src="../jquery-1.11.2.min.js"> </script>
+             <script type="text/javascript">
+      $(function() {
+          $("#theList tr:even").addClass("stripe1");
+          $("#theList tr:odd").addClass("stripe2");
+
+          $("#theList tr").hover(
+              function() {
+                  $(this).toggleClass("highlight");
+              },
+              function() {
+                  $(this).toggleClass("highlight");
+              }
+          );
+
+          $("#theList").on("click", "tr", function showText (evt) {
+            alert($(this).text());
+          })
+      });
+     </script>
+       <style type="text/css">
+       .clickable {
+	  	cursor:pointer;
+	  }
+	  .stripe1 {
+	      background-color:#0f0;
+	  }
+	  .stripe2 {
+	      background-color:#afa;
+	  }
+	  .highlight {
+	      background-color: #ffcc00;
+	      font-weight:bold;
+	  }
+	  </style>
+</head>
+<table id="theList" border="3" width ="20%" align="center"  cellpadding="15%"  rules="all">
+ 	
+ 	<CAPTION>     
+<h1> Заголовок таблицы. </h1>
+	</CAPTION> 
+		<thead>
+			<tr >
+				<td > 1 </td>
+			  	<td> 2 </td>
+			  	<td> 3 </td>
+			  	<td> 4 </td>
+			  	<td> 5 </td>
+			  	<td> 6 </td>
+			  	<td> 7 </td>
+			  	<td> 8 </td>
+			  	<td> 9 </td>
+			  	<td> 10 </td>
+			</tr>
+
+		</thead>
+		<tbody>
+		  <tr>
+		  	<td > 1 </td>
+		  	<td> 2 </td>
+		  	<td> 3 </td>
+		  	<td> 4 </td>
+		  	<td> 5 </td>
+		  	<td> 6 </td>
+		  	<td> 7 </td>
+		  	<td> 8 </td>
+		  	<td> 9 </td>
+		  	<td> 10 </td>
+		  </tr>
+        <tr>
+		  	<td > 1 </td>
+		  	<td> 2 </td>
+		  	<td> 3 </td>
+		  	<td> 4 </td>
+		  	<td> 5 </td>
+		  	<td> 6 </td>
+		  	<td> 7 </td>
+		  	<td> 8 </td>
+		  	<td> 9 </td>
+		  	<td> 10 </td>
+		  </tr>
+		  <tr>
+		  	<td > 1 </td>
+		  	<td> 2 </td>
+		  	<td> 3 </td>
+		  	<td> 4 </td>
+		  	<td> 5 </td>
+		  	<td> 6 </td>
+		  	<td> 7 </td>
+		  	<td> 8 </td>
+		  	<td> 9 </td>
+		  	<td> 10 </td>
+		  </tr>
+		 <tr>
+		  	<td > 1 </td>
+		  	<td> 2 </td>
+		  	<td> 3 </td>
+		  	<td> 4 </td>
+		  	<td> 5 </td>
+		  	<td> 6 </td>
+		  	<td> 7 </td>
+		  	<td> 8 </td>
+		  	<td> 9 </td>
+		  	<td> 10 </td>
+		  </tr>
+		  <tr>
+		  	<td > 1 </td>
+		  	<td> 2 </td>
+		  	<td> 3 </td>
+		  	<td> 4 </td>
+		  	<td> 5 </td>
+		  	<td> 6 </td>
+		  	<td> 7 </td>
+		  	<td> 8 </td>
+		  	<td> 9 </td>
+		  	<td> 10 </td>
+		  </tr>
+		  <tr>
+		  	<td > 1 </td>
+		  	<td> 2 </td>
+		  	<td> 3 </td>
+		  	<td> 4 </td>
+		  	<td> 5 </td>
+		  	<td> 6 </td>
+		  	<td> 7 </td>
+		  	<td> 8 </td>
+		  	<td> 9 </td>
+		  	<td> 10 </td>
+		  </tr>
+		 <tr>
+		  	<td > 1 </td>
+		  	<td> 2 </td>
+		  	<td> 3 </td>
+		  	<td> 4 </td>
+		  	<td> 5 </td>
+		  	<td> 6 </td>
+		  	<td> 7 </td>
+		  	<td> 8 </td>
+		  	<td> 9 </td>
+		  	<td> 10 </td>
+		  </tr>
+		  <tr>
+		  	<td > 1 </td>
+		  	<td> 2 </td>
+		  	<td> 3 </td>
+		  	<td> 4 </td>
+		  	<td> 5 </td>
+		  	<td> 6 </td>
+		  	<td> 7 </td>
+		  	<td> 8 </td>
+		  	<td> 9 </td>
+		  	<td> 10 </td>
+		  </tr>
+		  <tr>
+		  	<td > 1 </td>
+		  	<td> 2 </td>
+		  	<td> 3 </td>
+		  	<td> 4 </td>
+		  	<td> 5 </td>
+		  	<td> 6 </td>
+		  	<td> 7 </td>
+		  	<td> 8 </td>
+		  	<td> 9 </td>
+		  	<td> 10 </td>
+		  </tr>
+		</tbody>
+	</table>
+
+</html>
